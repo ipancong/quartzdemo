@@ -1,0 +1,17 @@
+logging:
+  level:
+    root: info
+server:
+  port: 8088
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver # mysqlÇý¶¯°ü
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password:
+  quartz:
+    auto-startup: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
